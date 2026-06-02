@@ -2,6 +2,24 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="KIRIROM Natural Mineral Water Cambodia product website with English, Chinese, and Khmer language support." />
+  <title>KIRIROM Natural Mineral Water Cambodia</title>
+  <style>
+    :root {
+      --blue: #0876bd;
+      --blue-dark: #064e87;
+      --forest: #083b30;
+      --leaf: #0d7a5b;
+      --gold: #d9b45f;
+      --ink: #062f48;
+      --muted: #557083;
+      --soft: #eef9fb;
+      --card: rgba(255, 255, 255, 0.84);
+      --line: rgba(8, 118, 189, 0.15);
+      --shadow: 0 22px 60px rgba(6, 47, 72, 0.14);
+    }
 
 <meta charset="UTF-8">
 
@@ -160,15 +178,20 @@ font-size:32px;
 
 </style>
 
-</head>
+    html { scroll-behavior: smooth; }
 
-<body>
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Khmer", "Khmer OS", "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+      background: linear-gradient(180deg, #f7fdff 0%, #ecf8f6 58%, #ffffff 100%);
+    }
 
 <section class="hero">
 
 <div class="hero-content">
 
-<h1>KIRIROM</h1>
+    a { color: inherit; }
 
 <p>
 
@@ -188,7 +211,14 @@ Call Us
 
 </a>
 
-</div>
+    .brand-mark {
+      width: 42px;
+      height: 30px;
+      border-radius: 56% 44% 48% 52%;
+      background: linear-gradient(135deg, var(--blue), #75d2f2);
+      box-shadow: inset 0 -7px 12px rgba(255, 255, 255, 0.28), 0 10px 24px rgba(8, 118, 189, 0.28);
+      position: relative;
+    }
 
 </section>
 
@@ -226,7 +256,14 @@ Compact & refreshing
 
 </p>
 
-</div>
+    .language-switch {
+      display: inline-flex;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(6, 47, 72, 0.06);
+    }
 
 <div class="card">
 
@@ -360,7 +397,16 @@ KIRIROM Natural Mineral Water
 
 </p>
 
-</div>
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
+      align-items: center;
+      gap: clamp(28px, 5vw, 70px);
+      padding: clamp(64px, 8vw, 110px) clamp(18px, 6vw, 86px) clamp(54px, 7vw, 96px);
+      overflow: hidden;
+    }
 
 </section>
 

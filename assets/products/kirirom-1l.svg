@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1000" viewBox="0 0 760 1000" role="img" aria-label="KIRIROM 1L bottle rendering">
+  
+    <defs>
+      <linearGradient id="waterGlass" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0" stop-color="#f9ffff" stop-opacity=".90"/>
+        <stop offset=".36" stop-color="#b8eff8" stop-opacity=".40"/>
+        <stop offset=".72" stop-color="#ffffff" stop-opacity=".62"/>
+        <stop offset="1" stop-color="#6ec0d6" stop-opacity=".34"/>
+      </linearGradient>
+      <linearGradient id="waterBlue" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0" stop-color="#ffffff" stop-opacity=".50"/>
+        <stop offset=".45" stop-color="#b8e9f2" stop-opacity=".36"/>
+        <stop offset="1" stop-color="#61b9d5" stop-opacity=".50"/>
+      </linearGradient>
+      <linearGradient id="capBlue" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0" stop-color="#56b6e8"/>
+        <stop offset=".48" stop-color="#0f77bd"/>
+        <stop offset="1" stop-color="#064a8c"/>
+      </linearGradient>
+      <radialGradient id="shine" cx="30%" cy="18%" r="70%">
+        <stop offset="0" stop-color="#ffffff" stop-opacity=".96"/>
+        <stop offset=".35" stop-color="#ffffff" stop-opacity=".20"/>
+        <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#07324f" flood-opacity=".24"/>
+      </filter>
+      <filter id="mistBlur"><feGaussianBlur stdDeviation="18"/></filter>
+      <pattern id="capRidges" width="8" height="8" patternUnits="userSpaceOnUse">
+        <path d="M1 0v8" stroke="#e4f7ff" stroke-width="1.2" opacity=".65"/>
+      </pattern>
+    </defs>
+  <rect width="760" height="1000" fill="none"/>
+  <ellipse cx="380" cy="935" rx="250" ry="42" fill="#07324f" opacity=".16"/>
+  <g filter="url(#softShadow)">
+    <g fill="url(#waterGlass)" stroke="#c7f4ff" stroke-width="4" opacity=".94"><path d="M330 150 C305 190 292 255 292 365 L292 790 C292 865 340 904 380 904 C420 904 468 865 468 790 L468 365 C468 255 455 190 430 150 Z"/><rect x="345" y="94" width="70" height="82" rx="18"/><rect x="334" y="76" width="92" height="34" rx="11"/></g>
+    <g opacity=".65" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"><path d="M300 320 C330 300 360 340 392 317 C420 298 445 320 462 306"/><path d="M300 696 C330 676 360 716 392 693 C420 674 445 696 462 682"/></g>
+    <g opacity=".38" fill="url(#waterBlue)"><path d="M330 150 C305 190 292 255 292 365 L292 790 C292 865 340 904 380 904 C420 904 468 865 468 790 L468 365 C468 255 455 190 430 150 Z"/></g>
+    <path d="M240 250 C205 335 203 485 210 720" fill="none" stroke="#ffffff" stroke-width="23" opacity=".46" stroke-linecap="round"/>
+    <path d="M488 240 C538 360 546 520 528 760" fill="none" stroke="#7dc4da" stroke-width="9" opacity=".26" stroke-linecap="round"/>
+    <ellipse cx="310" cy="300" rx="70" ry="145" fill="url(#shine)" opacity=".75"/>
+    <rect x="331" y="50" width="98" height="42" rx="10" fill="url(#capBlue)"/><rect x="331" y="50" width="98" height="42" rx="10" fill="url(#capRidges)" opacity=".45"/>
+    
+    <g transform="translate(302 414)">
+      <rect width="156" height="246" rx="17.2" fill="#eaf9ff" opacity=".97"/>
+      <path d="M0 123.0 C28.1 73.8,53.0 172.2,81.1 113.2 C110.8 54.1,131.0 91.0,156 61.5 L156 246 L0 246 Z" fill="#50a878" opacity=".72"/>
+      <path d="M0 147.6 C31.2 110.7,54.6 177.1,87.4 142.7 C121.7 105.8,142.0 130.4,156 110.7" fill="none" stroke="#f2c76a" stroke-width="5.5" opacity=".85"/>
+      <path d="M15.6 201.7 C43.7 167.3,59.3 211.6,84.2 179.6" fill="none" stroke="#80d7f2" stroke-width="4.7" opacity=".82"/>
+      <ellipse cx="101.4" cy="145.1" rx="18.7" ry="59.0" fill="#f7fbff" transform="rotate(-18 101.4 145.1)"/>
+      <path d="M106.1 105.8 C129.5 95.9,138.8 118.1,123.2 137.8" fill="none" stroke="#182533" stroke-width="5.5" stroke-linecap="round"/>
+      <text x="78.0" y="49.2" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="24.2" fill="#0f77bd" letter-spacing="1">KIRIROM</text>
+      <text x="78.0" y="78.7" text-anchor="middle" font-family="Arial, sans-serif" font-size="9.7" fill="#0f77bd" opacity=".88">NATURAL MINERAL WATER</text>
+    </g>
+  </g>
+  <text x="380" y="986" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="42" fill="#082f4f">1L</text>
+</svg>
