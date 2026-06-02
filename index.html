@@ -162,13 +162,18 @@ font-size:32px;
 </style>
 </head>
 
-<body>
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Khmer", "Khmer OS", "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+      background: linear-gradient(180deg, #f7fdff 0%, #ecf8f6 58%, #ffffff 100%);
+    }
 
 <section class="hero">
 
 <div class="overlay">
 
-<h1>KIRIROM</h1>
+    a { color: inherit; }
 
 <p>Pure By Nature. Perfect By Taste.</p>
 
@@ -177,11 +182,24 @@ font-size:32px;
 ទឹកធម្មជាតិផ្អែមពីគីរីរម្យ
 </p>
 
-<a class="button" href="tel:095774299">
-Call Us
-</a>
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: max-content;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-decoration: none;
+    }
 
-</div>
+    .brand-mark {
+      width: 42px;
+      height: 30px;
+      border-radius: 56% 44% 48% 52%;
+      background: linear-gradient(135deg, var(--blue), #75d2f2);
+      box-shadow: inset 0 -7px 12px rgba(255, 255, 255, 0.28), 0 10px 24px rgba(8, 118, 189, 0.28);
+      position: relative;
+    }
 
 </section>
 
@@ -231,7 +249,21 @@ Family and hotel supply.<br>
 </p>
 </div>
 
-</div>
+    .hero {
+      position: relative;
+      min-height: 94vh;
+      display: grid;
+      grid-template-columns: minmax(0, 0.94fr) minmax(360px, 1.06fr);
+      align-items: center;
+      gap: clamp(32px, 6vw, 92px);
+      padding: clamp(72px, 9vw, 128px) clamp(18px, 7vw, 108px) clamp(62px, 8vw, 108px);
+      overflow: hidden;
+      isolation: isolate;
+      background:
+        radial-gradient(circle at 78% 14%, rgba(255, 255, 255, 0.92), transparent 25%),
+        radial-gradient(circle at 18% 18%, rgba(222, 239, 233, 0.72), transparent 30%),
+        linear-gradient(135deg, #fbfcfb 0%, #f1f6f3 42%, #e8f0ee 100%);
+    }
 
 </section>
 
