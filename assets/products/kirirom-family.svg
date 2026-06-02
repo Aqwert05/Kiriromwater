@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Five KIRIROM water sizes product family rendering">
+  <defs><linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f8fdff"/><stop offset="1" stop-color="#edf8f6"/></linearGradient></defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <ellipse cx="770" cy="885" rx="610" ry="72" fill="#0b3550" opacity=".10"/>
+  <image href="kirirom-15l.svg" x="80" y="75" width="475" height="625"/>
+  <image href="kirirom-330ml.svg" x="490" y="470" width="215" height="283"/>
+  <image href="kirirom-500ml.svg" x="662" y="392" width="250" height="329"/>
+  <image href="kirirom-1l.svg" x="882" y="272" width="300" height="395"/>
+  <image href="kirirom-5l.svg" x="1110" y="232" width="390" height="513"/>
+  <text x="800" y="858" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="800" fill="#082f4f" letter-spacing="2">15L · 330ml · 500ml · 1L · 5L</text>
+</svg>
