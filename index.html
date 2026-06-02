@@ -1,62 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-<title>KIRIROM Mineral Water</title>
+<meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KIRIROM Natural Mineral Water</title>
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
 background:#ffffff;
+color:#222;
 }
 
 .hero{
 height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600');
+background-size:cover;
+background-position:center;
 display:flex;
 justify-content:center;
 align-items:center;
-flex-direction:column;
-background:linear-gradient(to bottom,#0077cc,#00aaff);
-color:white;
 text-align:center;
+color:white;
 padding:20px;
 }
 
-h1{
-font-size:60px;
-margin:0;
-letter-spacing:4px;
+.hero-content h1{
+font-size:70px;
+letter-spacing:5px;
 }
 
-p{
-font-size:22px;
-}
-
-.button{
+.hero-content p{
+font-size:24px;
 margin-top:20px;
-padding:15px 35px;
+max-width:700px;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:16px 40px;
 background:white;
-color:#0077cc;
+color:#0066cc;
 text-decoration:none;
-border-radius:10px;
 font-weight:bold;
+border-radius:10px;
 }
 
 .section{
-padding:60px 20px;
+padding:80px 10%;
+}
+
+.section-title{
+font-size:42px;
+margin-bottom:40px;
 text-align:center;
+color:#0066cc;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.card{
+background:#f5f5f5;
+border-radius:20px;
+padding:30px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+max-width:180px;
+height:220px;
+object-fit:contain;
+margin-bottom:20px;
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.card p{
+color:#555;
+line-height:1.6;
+}
+
+.story{
+background:#eef7ff;
+border-radius:20px;
+padding:50px;
+line-height:1.9;
+font-size:20px;
+}
+
+.contact{
+background:#0066cc;
+color:white;
+border-radius:20px;
+padding:50px;
+text-align:center;
+}
+
+.contact h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.contact p{
+font-size:22px;
+line-height:1.8;
 }
 
 .footer{
 background:#111;
 color:white;
-padding:25px;
+padding:30px;
 text-align:center;
+margin-top:60px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:42px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.section-title{
+font-size:32px;
+}
+
 }
 
 </style>
@@ -65,34 +164,204 @@ text-align:center;
 
 <body>
 
-<div class="hero">
+<section class="hero">
+
+<div class="hero-content">
 
 <h1>KIRIROM</h1>
 
-<p>Natural Mineral Water From Cambodia</p>
+<p>
 
-<a class="button" href="tel:095774299">
+Pure By Nature. Perfect By Taste.
+
+<br><br>
+
+源自基里隆山的天然甘甜  
+<br>
+ទឹកធម្មជាតិពីភ្នំគីរីរម្យ
+
+</p>
+
+<a class="btn" href="tel:095774299">
+
 Call Us
+
 </a>
 
 </div>
 
-<div class="section">
+</section>
 
-<h2>Available Sizes</h2>
+<section class="section">
+
+<h2 class="section-title">
+
+Our Products
+<br>
+我们的产品
+<br>
+ផលិតផលរបស់យើង
+
+</h2>
+
+<div class="products">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1564419320461-6870880221ad?q=80&w=800">
+
+<h3>330ml</h3>
 
 <p>
-330ml • 500ml • 1L • 5L • 15L
+
+Compact & refreshing
+
+<br>
+
+便携清爽
+
+<br>
+
+តូច ងាយស្រួល
+
 </p>
 
 </div>
 
-<div class="footer">
+<div class="card">
 
-© 2026 KIRIROM Mineral Water
+<img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=800">
+
+<h3>500ml</h3>
+
+<p>
+
+Perfect everyday hydration
+
+<br>
+
+日常饮用
+
+<br>
+
+សម្រាប់ប្រចាំថ្ងៃ
+
+</p>
 
 </div>
 
-</body>
+<div class="card">
 
-</html>
+<img src="https://images.unsplash.com/photo-1616118132534-381148898bb4?q=80&w=800">
+
+<h3>1L</h3>
+
+<p>
+
+Naturally sweet taste
+
+<br>
+
+天然甘甜
+
+<br>
+
+រសជាតិផ្អែមធម្មជាតិ
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?q=80&w=800">
+
+<h3>5L / 15L</h3>
+
+<p>
+
+Family & office use
+
+<br>
+
+家庭办公
+
+<br>
+
+សម្រាប់គ្រួសារ
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+
+Our Story
+<br>
+品牌故事
+<br>
+រឿងរ៉ាវរបស់យើង
+
+</h2>
+
+<div class="story">
+
+KIRIROM Natural Mineral Water is inspired by the natural beauty of Cambodia’s Kirirom Mountain.
+
+We believe pure water should feel refreshing, natural and healthy for every family, office, restaurant and hotel.
+
+Every bottle reflects nature, purity and trust.
+
+<br><br>
+
+基里隆天然矿泉水源自柬埔寨美丽的基里隆山。
+
+我们希望每一瓶水都代表自然、纯净与健康。
+
+<br><br>
+
+ទឹករ៉ែធម្មជាតិគីរីរម្យ តំណាងឱ្យធម្មជាតិ ភាពបរិសុទ្ធ និងសុខភាព។
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="contact">
+
+<h2>
+
+Contact Us
+<br>
+联系我们
+<br>
+ទាក់ទងមកយើង
+
+</h2>
+
+<p>
+
+Phone: 095 774 299
+
+<br><br>
+
+Phnom Penh, Cambodia
+
+<br><br>
+
+KIRIROM Natural Mineral Water
+
+</p>
+
+</div>
+
+</section>
+
+<div class="foot
