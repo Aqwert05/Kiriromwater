@@ -1,28 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="KIRIROM Natural Mineral Water Cambodia product website with English, Chinese, and Khmer language support." />
-  <title>KIRIROM Natural Mineral Water Cambodia</title>
-  <style id="site-styles" type="text/css">
-    :root {
-      --blue: #0876bd;
-      --blue-dark: #064e87;
-      --forest: #083b30;
-      --leaf: #0d7a5b;
-      --gold: #d9b45f;
-      --ink: #062f48;
-      --muted: #557083;
-      --soft: #eef9fb;
-      --card: rgba(255, 255, 255, 0.84);
-      --line: rgba(8, 118, 189, 0.15);
-      --shadow: 0 22px 60px rgba(6, 47, 72, 0.14);
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    * { box-sizing: border-box; }
+<title>KIRIROM Natural Mineral Water</title>
 
-    html { scroll-behavior: smooth; }
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4fbff;
+color:#222;
+line-height:1.6;
+}
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600') center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+position:relative;
+}
+
+.overlay{
+background:rgba(0,0,0,0.45);
+padding:40px;
+border-radius:20px;
+max-width:800px;
+}
+
+.hero h1{
+font-size:60px;
+color:white;
+margin-bottom:20px;
+letter-spacing:4px;
+}
+
+.hero p{
+color:white;
+font-size:22px;
+margin-bottom:15px;
+}
+
+.hero .sub{
+font-size:18px;
+opacity:0.9;
+}
+
+.button{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:white;
+color:#0077cc;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.button:hover{
+background:#0077cc;
+color:white;
+}
+
+.section{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section h2{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+color:#006699;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+padding:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#0077cc;
+}
+
+.card p{
+font-size:14px;
+color:#555;
+}
+
+.story{
+background:white;
+border-radius:20px;
+padding:40px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.story p{
+margin-bottom:20px;
+font-size:18px;
+}
+
+.footer{
+background:#003344;
+color:white;
+text-align:center;
+padding:40px 20px;
+margin-top:60px;
+}
+
+.footer p{
+margin:10px 0;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section h2{
+font-size:32px;
+}
+
+}
+
+</style>
+</head>
 
     body {
       margin: 0;
@@ -31,24 +169,18 @@
       background: linear-gradient(180deg, #f7fdff 0%, #ecf8f6 58%, #ffffff 100%);
     }
 
-    img { display: block; max-width: 100%; }
+<section class="hero">
+
+<div class="overlay">
 
     a { color: inherit; }
 
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 30;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 14px clamp(18px, 5vw, 72px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.64);
-      background: rgba(255, 255, 255, 0.82);
-      backdrop-filter: blur(18px);
-      box-shadow: 0 10px 30px rgba(6, 47, 72, 0.08);
-    }
+<p>Pure By Nature. Perfect By Taste.</p>
+
+<p class="sub">
+源自基里隆山的天然甘甜<br>
+ទឹកធម្មជាតិផ្អែមពីគីរីរម្យ
+</p>
 
     .brand {
       display: flex;
@@ -69,55 +201,53 @@
       position: relative;
     }
 
-    .brand-mark::after {
-      content: "";
-      position: absolute;
-      left: 8px;
-      right: 8px;
-      top: 12px;
-      height: 3px;
-      border-radius: 999px;
-      background: #fff;
-      box-shadow: 11px -6px 0 -1px rgba(255, 255, 255, 0.72);
-    }
+</section>
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: clamp(12px, 2.2vw, 24px);
-      color: #214d62;
-      font-size: 14px;
-      font-weight: 800;
-    }
+<section class="section">
 
-    .nav-links a {
-      text-decoration: none;
-      white-space: nowrap;
-    }
+<h2>Our Products</h2>
 
-    .language-switch {
-      display: inline-flex;
-      padding: 4px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: #fff;
-      box-shadow: 0 8px 24px rgba(6, 47, 72, 0.06);
-    }
+<div class="products">
 
-    .language-switch button {
-      border: 0;
-      border-radius: 999px;
-      padding: 8px 11px;
-      color: var(--muted);
-      background: transparent;
-      cursor: pointer;
-      font-weight: 900;
-    }
+<div class="card">
+<img src="https://images.unsplash.com/photo-1564419320408-38e24e038739?q=80&w=800">
+<h3>330ml</h3>
+<p>
+Portable daily hydration.<br>
+便携轻饮<br>
+ទឹកផឹកប្រចាំថ្ងៃ
+</p>
+</div>
 
-    .language-switch button.active {
-      color: #fff;
-      background: var(--blue);
-    }
+<div class="card">
+<img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?q=80&w=800">
+<h3>500ml</h3>
+<p>
+Fresh and pure natural mineral water.<br>
+天然纯净矿泉水<br>
+ទឹករ៉ែធម្មជាតិ
+</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?q=80&w=800">
+<h3>1L</h3>
+<p>
+Perfect for office and travel.<br>
+适合办公与出行<br>
+សម្រាប់ការងារ និងដំណើរ
+</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800">
+<h3>5L / 15L</h3>
+<p>
+Family and hotel supply.<br>
+家庭与酒店用水<br>
+សម្រាប់គ្រួសារ និងសណ្ឋាគារ
+</p>
+</div>
 
     .hero {
       position: relative;
@@ -135,656 +265,39 @@
         linear-gradient(135deg, #fbfcfb 0%, #f1f6f3 42%, #e8f0ee 100%);
     }
 
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -3;
-      background:
-        linear-gradient(90deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.72) 42%, rgba(240, 247, 245, 0.44) 100%),
-        url("assets/posters/kirirom-nature-hero.svg") center / cover no-repeat;
-      filter: saturate(0.62) brightness(1.08) contrast(0.88);
-      opacity: 0.28;
-    }
+</section>
 
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: auto -12vw -22vh -12vw;
-      z-index: -2;
-      height: 46vh;
-      background:
-        radial-gradient(ellipse at 54% 35%, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0) 66%),
-        radial-gradient(ellipse at 70% 50%, rgba(165, 184, 177, 0.30), rgba(165, 184, 177, 0) 56%);
-      filter: blur(18px);
-    }
+<section class="section">
 
-    .hero-mist {
-      position: absolute;
-      inset: 8% -6% auto 32%;
-      z-index: -1;
-      height: 38%;
-      pointer-events: none;
-      background:
-        radial-gradient(ellipse at 20% 55%, rgba(255, 255, 255, 0.78), transparent 58%),
-        radial-gradient(ellipse at 54% 38%, rgba(227, 238, 235, 0.68), transparent 62%),
-        radial-gradient(ellipse at 78% 62%, rgba(255, 255, 255, 0.72), transparent 55%);
-      filter: blur(24px);
-      opacity: 0.92;
-    }
+<h2>Brand Story</h2>
 
-    .hero-copy, .hero-visual { position: relative; z-index: 2; }
+<div class="story">
 
-    .hero-copy {
-      max-width: 760px;
-    }
+<p>
+KIRIROM Natural Mineral Water comes from the beautiful mountain region of Cambodia.
+</p>
 
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      margin: 0 0 24px;
-      color: #49675f;
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-    }
+<p>
+基里隆天然矿泉水源自柬埔寨原始森林山脉，口感甘甜纯净。
+</p>
 
-    .eyebrow::before {
-      content: "";
-      width: 34px;
-      height: 1px;
-      background: linear-gradient(90deg, rgba(11, 54, 46, 0.18), rgba(11, 54, 46, 0.78));
-    }
+<p>
+ទឹករ៉ែធម្មជាតិគីរីរម្យ មានប្រភពពីតំបន់ភ្នំធម្មជាតិកម្ពុជា ស្អាត បរិសុទ្ធ និងផ្អែមធម្មជាតិ។
+</p>
 
-    h1, h2, h3, p { margin-top: 0; }
+</div>
 
-    h1 {
-      max-width: 820px;
-      margin-bottom: 24px;
-      color: #102f2d;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(48px, 7.6vw, 112px);
-      font-weight: 500;
-      line-height: 0.92;
-      letter-spacing: -0.075em;
-    }
+</section>
 
-    .hero-text {
-      max-width: 590px;
-      color: #51675f;
-      font-size: clamp(16px, 1.45vw, 20px);
-      line-height: 1.88;
-      letter-spacing: 0.01em;
-    }
+<footer class="footer">
 
-    .hero-actions, .contact-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 34px;
-    }
+<p>KIRIROM Natural Mineral Water</p>
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      min-height: 50px;
-      padding: 14px 22px;
-      border: 1px solid transparent;
-      border-radius: 999px;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      box-shadow: 0 18px 34px rgba(28, 62, 58, 0.10);
-    }
+<p>Phone: 095 774 299</p>
 
-    .btn.primary {
-      color: #fff;
-      background: linear-gradient(135deg, #0b352d, #0b5f51);
-    }
+<p>Cambodia</p>
 
-    .btn.light {
-      color: #173b36;
-      background: rgba(255, 255, 255, 0.56);
-      border-color: rgba(23, 59, 54, 0.16);
-      backdrop-filter: blur(14px);
-    }
+</footer>
 
-    .btn.telegram { color: #fff; background: linear-gradient(135deg, #229ed9, #1375b5); }
-
-    .hero-visual {
-      min-height: clamp(480px, 58vw, 680px);
-      padding: clamp(20px, 3vw, 34px);
-      border: 1px solid rgba(255, 255, 255, 0.82);
-      border-radius: clamp(34px, 4vw, 54px);
-      background:
-        linear-gradient(160deg, rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.28)),
-        radial-gradient(circle at 70% 18%, rgba(255, 255, 255, 0.86), transparent 28%);
-      box-shadow: 0 42px 110px rgba(29, 59, 55, 0.16);
-      backdrop-filter: blur(26px);
-      overflow: hidden;
-    }
-
-    .hero-visual::before {
-      content: "";
-      position: absolute;
-      inset: 11% 7% 28%;
-      z-index: 0;
-      border-radius: 999px;
-      background:
-        radial-gradient(ellipse at 30% 45%, rgba(255, 255, 255, 0.86), transparent 62%),
-        radial-gradient(ellipse at 68% 46%, rgba(218, 232, 226, 0.78), transparent 64%);
-      filter: blur(24px);
-    }
-
-    .hero-visual::after {
-      content: "";
-      position: absolute;
-      left: 12%;
-      right: 12%;
-      bottom: 13%;
-      height: 78px;
-      border-radius: 50%;
-      background: radial-gradient(ellipse at center, rgba(77, 83, 75, 0.24), rgba(77, 83, 75, 0));
-      filter: blur(10px);
-    }
-
-    .hero-product {
-      position: relative;
-      z-index: 2;
-      width: min(92%, 620px);
-      margin: 8px auto 0;
-      filter: drop-shadow(0 34px 38px rgba(18, 49, 44, 0.22));
-    }
-
-    .hero-stone {
-      position: absolute;
-      z-index: 1;
-      left: 9%;
-      right: 9%;
-      bottom: 9%;
-      height: 122px;
-      border-radius: 55% 45% 50% 50%;
-      background:
-        linear-gradient(180deg, rgba(191, 194, 185, 0.78), rgba(121, 128, 119, 0.32)),
-        radial-gradient(circle at 24% 35%, rgba(255, 255, 255, 0.54), transparent 26%),
-        radial-gradient(circle at 72% 50%, rgba(86, 98, 91, 0.28), transparent 34%);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.52), 0 28px 52px rgba(36, 52, 47, 0.16);
-    }
-
-    .hero-caption {
-      position: absolute;
-      z-index: 3;
-      left: clamp(18px, 3vw, 34px);
-      right: clamp(18px, 3vw, 34px);
-      bottom: clamp(18px, 3vw, 30px);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(20, 55, 50, 0.12);
-      color: #536760;
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
-
-    .hero-caption strong {
-      display: block;
-      color: #173b36;
-      font-size: 14px;
-      letter-spacing: 0.16em;
-    }
-
-    .quick-facts {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-top: 12px;
-    }
-
-    .fact {
-      padding: 15px;
-      border: 1px solid rgba(8, 118, 189, 0.12);
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.78);
-    }
-
-    .fact strong { display: block; font-size: 22px; }
-    .fact span { color: var(--muted); font-size: 12px; font-weight: 800; }
-
-    section { padding: clamp(60px, 8vw, 108px) clamp(18px, 6vw, 86px); }
-
-    .section-head {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(300px, 530px);
-      gap: 28px;
-      align-items: end;
-      margin-bottom: 34px;
-    }
-
-    .kicker {
-      margin-bottom: 10px;
-      color: var(--blue);
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-    }
-
-    h2 {
-      margin-bottom: 0;
-      font-size: clamp(32px, 4.4vw, 58px);
-      line-height: 1.04;
-      letter-spacing: -0.035em;
-    }
-
-    .lead {
-      margin-bottom: 0;
-      color: var(--muted);
-      font-size: 17px;
-      line-height: 1.72;
-    }
-
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .product-card, .story-card, .benefit-card, .use-card, .contact-card {
-      border: 1px solid var(--line);
-      background: var(--card);
-      box-shadow: 0 16px 45px rgba(6, 47, 72, 0.08);
-    }
-
-    .product-card {
-      display: flex;
-      flex-direction: column;
-      min-height: 100%;
-      padding: 22px;
-      border-radius: 28px;
-      text-align: center;
-    }
-
-    .product-card img {
-      width: min(100%, 210px);
-      height: 260px;
-      margin: 0 auto 18px;
-      object-fit: contain;
-      filter: drop-shadow(0 24px 22px rgba(6, 47, 72, 0.16));
-    }
-
-    .product-card h3 {
-      margin-bottom: 8px;
-      color: var(--blue-dark);
-      font-size: 28px;
-    }
-
-    .product-card p {
-      margin-bottom: 0;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    .story {
-      background:
-        radial-gradient(circle at 12% 5%, rgba(118, 210, 242, 0.22), transparent 34%),
-        linear-gradient(135deg, #ffffff, #edf8f5);
-    }
-
-    .story-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-      gap: 26px;
-      align-items: center;
-    }
-
-    .story-card {
-      padding: clamp(28px, 4vw, 48px);
-      border-radius: 34px;
-    }
-
-    .story-card p {
-      color: var(--muted);
-      font-size: 18px;
-      line-height: 1.78;
-    }
-
-    .story-points {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    .story-point {
-      padding: 18px;
-      border-radius: 20px;
-      color: #fff;
-      background: linear-gradient(135deg, var(--forest), #0a6750);
-    }
-
-    .story-point strong { display: block; margin-bottom: 6px; color: #bcefe6; }
-
-    .poster-frame {
-      padding: 18px;
-      border: 1px solid var(--line);
-      border-radius: 34px;
-      background: rgba(255, 255, 255, 0.72);
-      box-shadow: var(--shadow);
-    }
-
-    .poster-frame img { width: 100%; border-radius: 24px; }
-
-    .benefits-grid, .uses-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .benefit-card, .use-card {
-      padding: 24px;
-      border-radius: 26px;
-    }
-
-    .benefit-card .icon, .use-card .icon {
-      display: grid;
-      place-items: center;
-      width: 48px;
-      height: 48px;
-      margin-bottom: 18px;
-      border-radius: 16px;
-      color: #fff;
-      background: linear-gradient(135deg, var(--blue), #67cce9);
-      font-size: 24px;
-    }
-
-    .benefit-card h3, .use-card h3 { margin-bottom: 10px; }
-    .benefit-card p, .use-card p { margin-bottom: 0; color: var(--muted); line-height: 1.65; }
-
-    .uses { background: linear-gradient(180deg, rgba(235, 248, 247, 0.7), rgba(255, 255, 255, 0.94)); }
-
-    .contact {
-      padding-bottom: 34px;
-    }
-
-    .contact-card {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
-      gap: 28px;
-      align-items: center;
-      padding: clamp(28px, 5vw, 52px);
-      border-radius: 36px;
-      color: #fff;
-      background:
-        radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.22), transparent 28%),
-        linear-gradient(135deg, var(--blue-dark), var(--forest));
-      box-shadow: var(--shadow);
-    }
-
-    .contact-card .kicker, .contact-card .lead { color: rgba(255, 255, 255, 0.82); }
-    .contact-card h2 { color: #fff; }
-
-    .contact-list {
-      display: grid;
-      gap: 12px;
-      padding: 22px;
-      border-radius: 24px;
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.20);
-    }
-
-    .contact-list a, .contact-list div {
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 900;
-    }
-
-    footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 24px clamp(18px, 6vw, 86px) 34px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    @media (max-width: 1080px) {
-      .products-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .benefits-grid, .uses-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .hero, .story-layout, .contact-card { grid-template-columns: 1fr; }
-      .hero { min-height: auto; }
-    }
-
-    @media (max-width: 760px) {
-      .topbar { align-items: flex-start; flex-direction: column; }
-      .nav-links { width: 100%; overflow-x: auto; padding-bottom: 2px; }
-      .language-switch { align-self: stretch; justify-content: space-between; }
-      .language-switch button { flex: 1; }
-      .hero { padding-top: 42px; }
-      .quick-facts, .section-head, .products-grid, .story-points, .benefits-grid, .uses-grid { grid-template-columns: 1fr; }
-      .product-card img { height: 220px; }
-      footer { flex-direction: column; }
-    }
-  </style>
-</head>
-<body>
-  <nav class="topbar" aria-label="Primary navigation">
-    <a class="brand" href="#top" aria-label="KIRIROM home"><span class="brand-mark" aria-hidden="true"></span><span>KIRIROM</span></a>
-    <div class="nav-links">
-      <a href="#products" data-i18n="nav_products">Products</a>
-      <a href="#story" data-i18n="nav_story">Story</a>
-      <a href="#benefits" data-i18n="nav_benefits">Benefits</a>
-      <a href="#contact" data-i18n="nav_contact">Contact</a>
-    </div>
-    <div class="language-switch" aria-label="Language selector">
-      <button type="button" class="active" data-lang="en">EN</button>
-      <button type="button" data-lang="zh">中文</button>
-      <button type="button" data-lang="km">ខ្មែរ</button>
-    </div>
-  </nav>
-
-  <main id="top">
-    <header class="hero">
-      <div class="hero-mist" aria-hidden="true"></div>
-      <div class="hero-copy">
-        <p class="eyebrow" data-i18n="hero_eyebrow">Mist, stone, forest and soft light</p>
-        <h1 data-i18n="hero_title">Pure water. Quiet luxury. Cambodian nature.</h1>
-        <p class="hero-text" data-i18n="hero_text">A cleaner, more premium homepage direction for KIRIROM — inspired by soft mist, mineral stone, forest rain and calm morning light.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="tel:095774299" data-i18n="call_btn">Call 095 774 299</a>
-          <a class="btn light" href="#products" data-i18n="view_products">Explore sizes</a>
-        </div>
-      </div>
-      <aside class="hero-visual" aria-label="KIRIROM luxury natural mineral water hero visual">
-        <div class="hero-stone" aria-hidden="true"></div>
-        <img class="hero-product" src="assets/products/kirirom-family.svg" alt="KIRIROM natural mineral water product range on a misty stone plinth" />
-        <div class="hero-caption">
-          <span><strong>KIRIROM</strong><span data-i18n="hero_caption_left">Natural mineral water</span></span>
-          <span data-i18n="hero_caption_right">Forest rain · Mineral stone</span>
-        </div>
-      </aside>
-    </header>
-
-    <section id="products" aria-labelledby="products-title">
-      <div class="section-head">
-        <div>
-          <p class="kicker" data-i18n="products_kicker">Product sizes</p>
-          <h2 id="products-title" data-i18n="products_title">Water for every daily need.</h2>
-        </div>
-        <p class="lead" data-i18n="products_lead">Choose portable bottles for retail and events, or large family bottles for home, office and hospitality supply.</p>
-      </div>
-      <div class="products-grid">
-        <article class="product-card">
-          <img src="assets/products/kirirom-330ml.svg" alt="KIRIROM 330ml bottle rendering" />
-          <h3>330ml</h3>
-          <p data-i18n="p330">Small bottle for meetings, hotel rooms, events and easy retail display.</p>
-        </article>
-        <article class="product-card">
-          <img src="assets/products/kirirom-500ml.svg" alt="KIRIROM 500ml bottle rendering" />
-          <h3>500ml</h3>
-          <p data-i18n="p500">Classic daily bottle for shops, travel, restaurants and personal hydration.</p>
-        </article>
-        <article class="product-card">
-          <img src="assets/products/kirirom-1l.svg" alt="KIRIROM 1L bottle rendering" />
-          <h3>1L</h3>
-          <p data-i18n="p1l">Larger bottle for active days, office desks and family dining tables.</p>
-        </article>
-        <article class="product-card">
-          <img src="assets/products/kirirom-5l.svg" alt="KIRIROM 5L jug rendering" />
-          <h3>5L</h3>
-          <p data-i18n="p5l">Convenient handle bottle for families, cooking, office pantries and small venues.</p>
-        </article>
-        <article class="product-card">
-          <img src="assets/products/kirirom-15l.svg" alt="KIRIROM 15L jug rendering" />
-          <h3>15L</h3>
-          <p data-i18n="p15l">Large supply format for homes, offices, restaurants, hotels and repeat delivery.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="story" class="story" aria-labelledby="story-title">
-      <div class="story-layout">
-        <div class="poster-frame">
-          <img src="assets/products/kirirom-family.svg" alt="KIRIROM five product size family rendering" />
-        </div>
-        <div class="story-card">
-          <p class="kicker" data-i18n="story_kicker">Brand story</p>
-          <h2 id="story-title" data-i18n="story_title">Inspired by Kirirom’s mountain forest.</h2>
-          <p data-i18n="story_text">KIRIROM Natural Mineral Water brings a calm Cambodian nature feeling to everyday drinking water. The website uses forest green, clean blue, rain mist, stone and morning sunlight to create a premium but simple local brand experience.</p>
-          <div class="story-points">
-            <div class="story-point"><strong data-i18n="story_point_1_title">Natural image</strong><span data-i18n="story_point_1">Mountain, forest, rainfall and stone layers.</span></div>
-            <div class="story-point"><strong data-i18n="story_point_2_title">Local market</strong><span data-i18n="story_point_2">Clear communication for Cambodian buyers.</span></div>
-            <div class="story-point"><strong data-i18n="story_point_3_title">Simple website</strong><span data-i18n="story_point_3">HTML, CSS and JavaScript only.</span></div>
-            <div class="story-point"><strong data-i18n="story_point_4_title">Ready to upload</strong><span data-i18n="story_point_4">Clean assets folder for GitHub and Vercel.</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="benefits" aria-labelledby="benefits-title">
-      <div class="section-head">
-        <div>
-          <p class="kicker" data-i18n="benefits_kicker">Natural mineral water benefits</p>
-          <h2 id="benefits-title" data-i18n="benefits_title">Clean hydration with a premium natural feeling.</h2>
-        </div>
-        <p class="lead" data-i18n="benefits_lead">A clear benefits section helps customers understand why KIRIROM is suitable for daily drinking and business supply.</p>
-      </div>
-      <div class="benefits-grid">
-        <article class="benefit-card"><div class="icon">💧</div><h3 data-i18n="benefit_1_title">Fresh taste</h3><p data-i18n="benefit_1">Clean and refreshing mineral water for everyday hydration.</p></article>
-        <article class="benefit-card"><div class="icon">⛰️</div><h3 data-i18n="benefit_2_title">Mountain source image</h3><p data-i18n="benefit_2">A natural highland identity that feels calm, pure and trustworthy.</p></article>
-        <article class="benefit-card"><div class="icon">🌿</div><h3 data-i18n="benefit_3_title">Natural lifestyle</h3><p data-i18n="benefit_3">Good for family tables, customer service, dining and hospitality.</p></article>
-        <article class="benefit-card"><div class="icon">📦</div><h3 data-i18n="benefit_4_title">Multiple sizes</h3><p data-i18n="benefit_4">From 330ml to 15L, suitable for retail, delivery and bulk purchase.</p></article>
-      </div>
-    </section>
-
-    <section id="uses" class="uses" aria-labelledby="uses-title">
-      <div class="section-head">
-        <div>
-          <p class="kicker" data-i18n="uses_kicker">For every customer</p>
-          <h2 id="uses-title" data-i18n="uses_title">Family, office, restaurant and hotel.</h2>
-        </div>
-        <p class="lead" data-i18n="uses_lead">The product range is organized for real Cambodian buying needs, from daily home drinking to hospitality supply.</p>
-      </div>
-      <div class="uses-grid">
-        <article class="use-card"><div class="icon">🏠</div><h3 data-i18n="use_family_title">Family</h3><p data-i18n="use_family">5L and 15L sizes for home drinking, cooking and daily convenience.</p></article>
-        <article class="use-card"><div class="icon">🏢</div><h3 data-i18n="use_office_title">Office</h3><p data-i18n="use_office">Keep staff, guests and meeting rooms supplied with clean water.</p></article>
-        <article class="use-card"><div class="icon">🍽️</div><h3 data-i18n="use_restaurant_title">Restaurant</h3><p data-i18n="use_restaurant">Professional water option for tables, kitchens and customer service.</p></article>
-        <article class="use-card"><div class="icon">🏨</div><h3 data-i18n="use_hotel_title">Hotel</h3><p data-i18n="use_hotel">330ml and 500ml bottles for guest rooms, lobby and events.</p></article>
-      </div>
-    </section>
-
-    <section id="contact" class="contact" aria-labelledby="contact-title">
-      <div class="contact-card">
-        <div>
-          <p class="kicker" data-i18n="contact_kicker">Contact and order</p>
-          <h2 id="contact-title" data-i18n="contact_title">Talk to KIRIROM for supply and delivery.</h2>
-          <p class="lead" data-i18n="contact_text">Call us for product information, local delivery, office supply, hotel supply or restaurant orders.</p>
-          <div class="contact-actions">
-            <a class="btn primary" href="tel:095774299" data-i18n="phone_1">Call 095 774 299</a>
-            <a class="btn light" href="tel:088888415" data-i18n="phone_2">Call 088 888 415</a>
-            <a class="btn telegram" href="https://t.me/kirirom1" target="_blank" rel="noopener">Telegram @kirirom1</a>
-          </div>
-        </div>
-        <div class="contact-list" aria-label="Contact details">
-          <a href="tel:095774299">Phone: 095 774 299</a>
-          <a href="tel:088888415">Phone: 088 888 415</a>
-          <a href="https://t.me/kirirom1" target="_blank" rel="noopener">Telegram: @kirirom1</a>
-          <div>KIRIROM Natural Mineral Water · Cambodia</div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div><strong>KIRIROM Natural Mineral Water</strong></div>
-    <div>© 2026 KIRIROM RX Development Co., Ltd.</div>
-  </footer>
-
-  <script type="text/javascript">
-    const translations = {
-      en: {
-        nav_products: "Products", nav_story: "Story", nav_benefits: "Benefits", nav_contact: "Contact",
-        hero_eyebrow: "Mist, stone, forest and soft light", hero_title: "Pure water. Quiet luxury. Cambodian nature.", hero_text: "A cleaner, more premium homepage direction for KIRIROM — inspired by soft mist, mineral stone, forest rain and calm morning light.", call_btn: "Call 095 774 299", view_products: "Explore sizes", hero_caption_left: "Natural mineral water", hero_caption_right: "Forest rain · Mineral stone",
-        fact_sizes: "Bottle sizes", fact_langs: "Languages", fact_market: "Local market",
-        products_kicker: "Product sizes", products_title: "Water for every daily need.", products_lead: "Choose portable bottles for retail and events, or large family bottles for home, office and hospitality supply.",
-        p330: "Small bottle for meetings, hotel rooms, events and easy retail display.", p500: "Classic daily bottle for shops, travel, restaurants and personal hydration.", p1l: "Larger bottle for active days, office desks and family dining tables.", p5l: "Convenient handle bottle for families, cooking, office pantries and small venues.", p15l: "Large supply format for homes, offices, restaurants, hotels and repeat delivery.",
-        story_kicker: "Brand story", story_title: "Inspired by Kirirom’s mountain forest.", story_text: "KIRIROM Natural Mineral Water brings a calm Cambodian nature feeling to everyday drinking water. The website uses forest green, clean blue, rain mist, stone and morning sunlight to create a premium but simple local brand experience.", story_point_1_title: "Natural image", story_point_1: "Mountain, forest, rainfall and stone layers.", story_point_2_title: "Local market", story_point_2: "Clear communication for Cambodian buyers.", story_point_3_title: "Simple website", story_point_3: "HTML, CSS and JavaScript only.", story_point_4_title: "Ready to upload", story_point_4: "Clean assets folder for GitHub and Vercel.",
-        benefits_kicker: "Natural mineral water benefits", benefits_title: "Clean hydration with a premium natural feeling.", benefits_lead: "A clear benefits section helps customers understand why KIRIROM is suitable for daily drinking and business supply.", benefit_1_title: "Fresh taste", benefit_1: "Clean and refreshing mineral water for everyday hydration.", benefit_2_title: "Mountain source image", benefit_2: "A natural highland identity that feels calm, pure and trustworthy.", benefit_3_title: "Natural lifestyle", benefit_3: "Good for family tables, customer service, dining and hospitality.", benefit_4_title: "Multiple sizes", benefit_4: "From 330ml to 15L, suitable for retail, delivery and bulk purchase.",
-        uses_kicker: "For every customer", uses_title: "Family, office, restaurant and hotel.", uses_lead: "The product range is organized for real Cambodian buying needs, from daily home drinking to hospitality supply.", use_family_title: "Family", use_family: "5L and 15L sizes for home drinking, cooking and daily convenience.", use_office_title: "Office", use_office: "Keep staff, guests and meeting rooms supplied with clean water.", use_restaurant_title: "Restaurant", use_restaurant: "Professional water option for tables, kitchens and customer service.", use_hotel_title: "Hotel", use_hotel: "330ml and 500ml bottles for guest rooms, lobby and events.",
-        contact_kicker: "Contact and order", contact_title: "Talk to KIRIROM for supply and delivery.", contact_text: "Call us for product information, local delivery, office supply, hotel supply or restaurant orders.", phone_1: "Call 095 774 299", phone_2: "Call 088 888 415"
-      },
-      zh: {
-        nav_products: "产品规格", nav_story: "品牌故事", nav_benefits: "矿泉优势", nav_contact: "联系订购",
-        hero_eyebrow: "雾气、岩石、森林与柔光", hero_title: "纯净之水，静奢之感，柬埔寨自然。", hero_text: "为 KIRIROM 首页打造更干净、更高级的方向：柔雾、矿物岩石、森林雨水与清晨柔光，呈现国际矿泉水品牌质感。", call_btn: "拨打 095 774 299", view_products: "探索产品规格", hero_caption_left: "天然矿泉水", hero_caption_right: "森林雨水 · 矿物岩石",
-        fact_sizes: "产品规格", fact_langs: "语言版本", fact_market: "柬埔寨市场",
-        products_kicker: "产品规格", products_title: "满足不同日常用水需求。", products_lead: "小瓶适合零售、会议和活动；大桶适合家庭、办公室、餐厅与酒店长期供应。",
-        p330: "小容量瓶，适合会议、酒店客房、活动派发与零售陈列。", p500: "经典日常瓶，适合商店、出行、餐厅与个人饮用。", p1l: "更大容量，适合工作日、办公桌与家庭餐桌。", p5l: "带提手家庭装，适合家庭烹饪、办公室茶水间与小型场所。", p15l: "大容量供应装，适合家庭、办公室、餐厅、酒店与持续配送。",
-        story_kicker: "品牌故事", story_title: "灵感来自基里隆山林。", story_text: "KIRIROM 天然矿泉水把柬埔寨自然山林的清爽感带入日常饮水。网站使用森林绿、清澈蓝、雨雾、岩石与清晨阳光，形成高级但简单的本地品牌体验。", story_point_1_title: "自然意象", story_point_1: "山、森林、雨水、雨雾与岩层。", story_point_2_title: "本地市场", story_point_2: "面向柬埔寨客户的清晰表达。", story_point_3_title: "简单网站", story_point_3: "仅使用 HTML、CSS 与简单 JavaScript。", story_point_4_title: "可直接上传", story_point_4: "GitHub 与 Vercel 可用的清晰素材目录。",
-        benefits_kicker: "天然矿泉水优势", benefits_title: "干净补水，自然高级。", benefits_lead: "清晰的优势模块帮助客户理解 KIRIROM 为什么适合日常饮用与商业供应。", benefit_1_title: "清爽口感", benefit_1: "干净、清新，适合每天补水。", benefit_2_title: "山泉形象", benefit_2: "自然高地品牌感，安静、纯净、值得信赖。", benefit_3_title: "自然生活", benefit_3: "适合家庭餐桌、客户接待、餐饮与酒店服务。", benefit_4_title: "多种规格", benefit_4: "从 330ml 到 15L，适合零售、配送与批量采购。",
-        uses_kicker: "适合不同客户", uses_title: "家庭、办公室、餐厅与酒店。", uses_lead: "产品规格按柬埔寨真实采购需求组织，从家庭日饮到酒店餐饮供应都能覆盖。", use_family_title: "家庭", use_family: "5L 与 15L 适合家庭饮用、烹饪与日常便利。", use_office_title: "办公室", use_office: "为员工、访客与会议室持续提供干净饮用水。", use_restaurant_title: "餐厅", use_restaurant: "适合餐桌、厨房与客户服务的专业饮用水。", use_hotel_title: "酒店", use_hotel: "330ml 与 500ml 适合客房、大堂与活动使用。",
-        contact_kicker: "联系与订购", contact_title: "联系 KIRIROM 获取供应与配送。", contact_text: "欢迎咨询产品信息、本地配送、办公室供应、酒店供应或餐厅订购。", phone_1: "拨打 095 774 299", phone_2: "拨打 088 888 415"
-      },
-      km: {
-        nav_products: "ផលិតផល", nav_story: "រឿងរ៉ាវ", nav_benefits: "អត្ថប្រយោជន៍", nav_contact: "ទំនាក់ទំនង",
-        hero_eyebrow: "អ័ព្ទ ថ្ម ព្រៃ និងពន្លឺទន់", hero_title: "ទឹកស្អាត។ ភាពប្រណិតស្ងប់ស្ងាត់។ ធម្មជាតិកម្ពុជា។", hero_text: "ទិសដៅទំព័រដើមថ្មីសម្រាប់ KIRIROM ដែលស្អាត និងប្រណិតជាងមុន — បំផុសគំនិតពីអ័ព្ទទន់ ថ្មរ៉ែ ភ្លៀងព្រៃ និងពន្លឺព្រឹកស្ងប់។", call_btn: "ទូរស័ព្ទ 095 774 299", view_products: "មើលទំហំផលិតផល", hero_caption_left: "ទឹករ៉ែធម្មជាតិ", hero_caption_right: "ភ្លៀងព្រៃ · ថ្មរ៉ែ",
-        fact_sizes: "ទំហំដប", fact_langs: "ភាសា", fact_market: "ទីផ្សារកម្ពុជា",
-        products_kicker: "ទំហំផលិតផល", products_title: "ទឹកសម្រាប់តម្រូវការប្រចាំថ្ងៃ។", products_lead: "ជ្រើសដបតូចសម្រាប់លក់រាយ និងកម្មវិធី ឬដបធំសម្រាប់ផ្ទះ ការិយាល័យ និងសេវាកម្មអាជីវកម្ម។",
-        p330: "ដបតូចសម្រាប់ប្រជុំ បន្ទប់សណ្ឋាគារ កម្មវិធី និងដាក់លក់។", p500: "ដបប្រចាំថ្ងៃសម្រាប់ហាង ការធ្វើដំណើរ ភោជនីយដ្ឋាន និងការផឹកផ្ទាល់ខ្លួន។", p1l: "ដបធំជាងមុនសម្រាប់ថ្ងៃសកម្ម តុការិយាល័យ និងតុអាហារគ្រួសារ។", p5l: "ដបមានដៃកាន់ សម្រាប់គ្រួសារ ចម្អិនអាហារ ការិយាល័យ និងទីកន្លែងតូចៗ។", p15l: "ទំហំធំសម្រាប់ផ្ទះ ការិយាល័យ ភោជនីយដ្ឋាន សណ្ឋាគារ និងការដឹកជញ្ជូនជាប្រចាំ។",
-        story_kicker: "រឿងរ៉ាវម៉ាក", story_title: "បំផុសគំនិតពីព្រៃភ្នំគីរីរម្យ។", story_text: "KIRIROM Natural Mineral Water នាំអារម្មណ៍ធម្មជាតិកម្ពុជាដែលស្ងប់ស្ងាត់មកក្នុងការផឹកទឹកប្រចាំថ្ងៃ។ គេហទំព័រប្រើពណ៌បៃតងព្រៃ ពណ៌ខៀវស្អាត អ័ព្ទភ្លៀង ថ្ម និងពន្លឺព្រឹក ដើម្បីបង្កើតបទពិសោធន៍ម៉ាកមូលដ្ឋានដែលទំនើប និងសាមញ្ញ។", story_point_1_title: "រូបភាពធម្មជាតិ", story_point_1: "ភ្នំ ព្រៃ ភ្លៀង អ័ព្ទ និងស្រទាប់ថ្ម។", story_point_2_title: "ទីផ្សារមូលដ្ឋាន", story_point_2: "ការប្រាស្រ័យទាក់ទងច្បាស់សម្រាប់អតិថិជនកម្ពុជា។", story_point_3_title: "គេហទំព័រសាមញ្ញ", story_point_3: "ប្រើតែ HTML, CSS និង JavaScript ងាយៗ។", story_point_4_title: "រួចរាល់សម្រាប់ផ្ទុកឡើង", story_point_4: "ថត assets ស្អាតសម្រាប់ GitHub និង Vercel។",
-        benefits_kicker: "អត្ថប្រយោជន៍ទឹករ៉ែធម្មជាតិ", benefits_title: "ផ្តល់ជាតិទឹកស្អាត ជាមួយអារម្មណ៍ធម្មជាតិទំនើប។", benefits_lead: "ផ្នែកអត្ថប្រយោជន៍ជួយអតិថិជនយល់ថា KIRIROM សមស្របសម្រាប់ការផឹកប្រចាំថ្ងៃ និងការផ្គត់ផ្គង់អាជីវកម្ម។", benefit_1_title: "រសជាតិស្រស់", benefit_1: "ទឹករ៉ែស្អាត និងស្រស់សម្រាប់ផឹករាល់ថ្ងៃ។", benefit_2_title: "រូបភាពប្រភពភ្នំ", benefit_2: "អត្តសញ្ញាណតំបន់ខ្ពស់ធម្មជាតិ ដែលមានអារម្មណ៍ស្ងប់ស្ងាត់ ស្អាត និងទុកចិត្តបាន។", benefit_3_title: "ជីវិតធម្មជាតិ", benefit_3: "ល្អសម្រាប់តុគ្រួសារ សេវាអតិថិជន អាហារ និងសណ្ឋាគារ។", benefit_4_title: "ទំហំច្រើន", benefit_4: "ពី 330ml ដល់ 15L សមស្របសម្រាប់លក់រាយ ដឹកជញ្ជូន និងទិញច្រើន។",
-        uses_kicker: "សម្រាប់អតិថិជនគ្រប់ប្រភេទ", uses_title: "គ្រួសារ ការិយាល័យ ភោជនីយដ្ឋាន និងសណ្ឋាគារ។", uses_lead: "ជួរផលិតផលរៀបចំសម្រាប់តម្រូវការទិញពិតៗនៅកម្ពុជា ចាប់ពីផ្ទះរហូតដល់សណ្ឋាគារ។", use_family_title: "គ្រួសារ", use_family: "ទំហំ 5L និង 15L សម្រាប់ផឹកនៅផ្ទះ ចម្អិនអាហារ និងភាពងាយស្រួលប្រចាំថ្ងៃ។", use_office_title: "ការិយាល័យ", use_office: "ផ្គត់ផ្គង់ទឹកស្អាតសម្រាប់បុគ្គលិក ភ្ញៀវ និងបន្ទប់ប្រជុំ។", use_restaurant_title: "ភោជនីយដ្ឋាន", use_restaurant: "ជម្រើសទឹកសម្រាប់តុអាហារ ផ្ទះបាយ និងសេវាអតិថិជន។", use_hotel_title: "សណ្ឋាគារ", use_hotel: "ដប 330ml និង 500ml សម្រាប់បន្ទប់ភ្ញៀវ ឡប់ប៊ី និងកម្មវិធី។",
-        contact_kicker: "ទំនាក់ទំនង និងបញ្ជាទិញ", contact_title: "ទាក់ទង KIRIROM សម្រាប់ផ្គត់ផ្គង់ និងដឹកជញ្ជូន។", contact_text: "សូមទូរស័ព្ទមកយើងសម្រាប់ព័ត៌មានផលិតផល ការដឹកជញ្ជូនមូលដ្ឋាន ការផ្គត់ផ្គង់ការិយាល័យ សណ្ឋាគារ ឬការបញ្ជាទិញភោជនីយដ្ឋាន។", phone_1: "ទូរស័ព្ទ 095 774 299", phone_2: "ទូរស័ព្ទ 088 888 415"
-      }
-    };
-
-    const buttons = document.querySelectorAll("[data-lang]");
-    const translatable = document.querySelectorAll("[data-i18n]");
-
-    function setLanguage(lang) {
-      document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
-      translatable.forEach((element) => {
-        const key = element.dataset.i18n;
-        if (translations[lang][key]) element.textContent = translations[lang][key];
-      });
-      buttons.forEach((button) => button.classList.toggle("active", button.dataset.lang === lang));
-      localStorage.setItem("kirirom-language", lang);
-    }
-
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => setLanguage(button.dataset.lang));
-    });
-
-    setLanguage(localStorage.getItem("kirirom-language") || "en");
-  </script>
 </body>
 </html>
