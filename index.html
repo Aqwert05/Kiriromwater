@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="KIRIROM Natural Mineral Water Cambodia product website with English, Chinese, and Khmer language support." />
-  <title>KIRIROM Natural Mineral Water Cambodia</title>
-  <style>
-    :root {
-      --blue: #0876bd;
-      --blue-dark: #064e87;
-      --forest: #083b30;
-      --leaf: #0d7a5b;
-      --gold: #d9b45f;
-      --ink: #062f48;
-      --muted: #557083;
-      --soft: #eef9fb;
-      --card: rgba(255, 255, 255, 0.84);
-      --line: rgba(8, 118, 189, 0.15);
-      --shadow: 0 22px 60px rgba(6, 47, 72, 0.14);
-    }
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>KIRIROM Natural Mineral Water</title>
@@ -33,61 +12,79 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
 }
 
 body{
-background:#ffffff;
+font-family:Arial,sans-serif;
+background:#f4fbff;
 color:#222;
+line-height:1.6;
 }
 
 .hero{
 height:100vh;
-background:
-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600');
-background-size:cover;
-background-position:center;
+background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600') center/cover no-repeat;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-color:white;
 padding:20px;
+position:relative;
 }
 
-.hero-content h1{
-font-size:70px;
-letter-spacing:5px;
+.overlay{
+background:rgba(0,0,0,0.45);
+padding:40px;
+border-radius:20px;
+max-width:800px;
 }
 
-.hero-content p{
-font-size:24px;
-margin-top:20px;
-max-width:700px;
-line-height:1.6;
+.hero h1{
+font-size:60px;
+color:white;
+margin-bottom:20px;
+letter-spacing:4px;
 }
 
-.btn{
+.hero p{
+color:white;
+font-size:22px;
+margin-bottom:15px;
+}
+
+.hero .sub{
+font-size:18px;
+opacity:0.9;
+}
+
+.button{
 display:inline-block;
-margin-top:30px;
-padding:16px 40px;
+margin-top:25px;
+padding:14px 30px;
 background:white;
-color:#0066cc;
+color:#0077cc;
 text-decoration:none;
+border-radius:40px;
 font-weight:bold;
-border-radius:10px;
+transition:0.3s;
+}
+
+.button:hover{
+background:#0077cc;
+color:white;
 }
 
 .section{
-padding:80px 10%;
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
 }
 
-.section-title{
-font-size:42px;
-margin-bottom:40px;
+.section h2{
 text-align:center;
-color:#0066cc;
+font-size:42px;
+margin-bottom:50px;
+color:#006699;
 }
 
 .products{
@@ -97,238 +94,141 @@ gap:30px;
 }
 
 .card{
-background:#f5f5f5;
+background:white;
 border-radius:20px;
-padding:30px;
+padding:20px;
 text-align:center;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card img{
 width:100%;
-max-width:180px;
-height:220px;
-object-fit:contain;
-margin-bottom:20px;
+height:260px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:15px;
 }
 
 .card h3{
-font-size:28px;
 margin-bottom:10px;
+color:#0077cc;
 }
 
 .card p{
+font-size:14px;
 color:#555;
-line-height:1.6;
 }
 
 .story{
-background:#eef7ff;
+background:white;
 border-radius:20px;
-padding:50px;
-line-height:1.9;
-font-size:20px;
+padding:40px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
-.contact{
-background:#0066cc;
-color:white;
-border-radius:20px;
-padding:50px;
-text-align:center;
-}
-
-.contact h2{
-font-size:42px;
+.story p{
 margin-bottom:20px;
-}
-
-.contact p{
-font-size:22px;
-line-height:1.8;
+font-size:18px;
 }
 
 .footer{
-background:#111;
+background:#003344;
 color:white;
-padding:30px;
 text-align:center;
+padding:40px 20px;
 margin-top:60px;
+}
+
+.footer p{
+margin:10px 0;
 }
 
 @media(max-width:768px){
 
-.hero-content h1{
-font-size:42px;
+.hero h1{
+font-size:40px;
 }
 
-.hero-content p{
+.hero p{
 font-size:18px;
 }
 
-.section-title{
+.section h2{
 font-size:32px;
 }
 
 }
 
 </style>
+</head>
 
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      color: var(--ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Khmer", "Khmer OS", "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
-      background: linear-gradient(180deg, #f7fdff 0%, #ecf8f6 58%, #ffffff 100%);
-    }
+<body>
 
 <section class="hero">
 
-<div class="hero-content">
+<div class="overlay">
 
-    a { color: inherit; }
+<h1>KIRIROM</h1>
 
-<p>
+<p>Pure By Nature. Perfect By Taste.</p>
 
-Pure By Nature. Perfect By Taste.
-
-<br><br>
-
-源自基里隆山的天然甘甜  
-<br>
-ទឹកធម្មជាតិពីភ្នំគីរីរម្យ
-
+<p class="sub">
+源自基里隆山的天然甘甜<br>
+ទឹកធម្មជាតិផ្អែមពីគីរីរម្យ
 </p>
 
-<a class="btn" href="tel:095774299">
-
+<a class="button" href="tel:095774299">
 Call Us
-
 </a>
 
-    .brand-mark {
-      width: 42px;
-      height: 30px;
-      border-radius: 56% 44% 48% 52%;
-      background: linear-gradient(135deg, var(--blue), #75d2f2);
-      box-shadow: inset 0 -7px 12px rgba(255, 255, 255, 0.28), 0 10px 24px rgba(8, 118, 189, 0.28);
-      position: relative;
-    }
+</div>
 
 </section>
 
 <section class="section">
 
-<h2 class="section-title">
-
-Our Products
-<br>
-我们的产品
-<br>
-ផលិតផលរបស់យើង
-
-</h2>
+<h2>Our Products</h2>
 
 <div class="products">
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1564419320461-6870880221ad?q=80&w=800">
-
+<img src="https://images.unsplash.com/photo-1564419320408-38e24e038739?q=80&w=800">
 <h3>330ml</h3>
-
 <p>
-
-Compact & refreshing
-
-<br>
-
-便携清爽
-
-<br>
-
-តូច ងាយស្រួល
-
+Portable daily hydration.<br>
+便携轻饮<br>
+ទឹកផឹកប្រចាំថ្ងៃ
 </p>
-
-    .language-switch {
-      display: inline-flex;
-      padding: 4px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: #fff;
-      box-shadow: 0 8px 24px rgba(6, 47, 72, 0.06);
-    }
+</div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=800">
-
+<img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?q=80&w=800">
 <h3>500ml</h3>
-
 <p>
-
-Perfect everyday hydration
-
-<br>
-
-日常饮用
-
-<br>
-
-សម្រាប់ប្រចាំថ្ងៃ
-
+Fresh and pure natural mineral water.<br>
+天然纯净矿泉水<br>
+ទឹករ៉ែធម្មជាតិ
 </p>
-
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1616118132534-381148898bb4?q=80&w=800">
-
-<h3>1L</h3>
-
-<p>
-
-Naturally sweet taste
-
-<br>
-
-天然甘甜
-
-<br>
-
-រសជាតិផ្អែមធម្មជាតិ
-
-</p>
-
-</div>
-
-<div class="card">
-
 <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?q=80&w=800">
-
-<h3>5L / 15L</h3>
-
+<h3>1L</h3>
 <p>
-
-Family & office use
-
-<br>
-
-家庭办公
-
-<br>
-
-សម្រាប់គ្រួសារ
-
+Perfect for office and travel.<br>
+适合办公与出行<br>
+សម្រាប់ការងារ និងដំណើរ
 </p>
+</div>
 
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800">
+<h3>5L / 15L</h3>
+<p>
+Family and hotel supply.<br>
+家庭与酒店用水<br>
+សម្រាប់គ្រួសារ និងសណ្ឋាគារ
+</p>
 </div>
 
 </div>
@@ -337,77 +237,35 @@ Family & office use
 
 <section class="section">
 
-<h2 class="section-title">
-
-Our Story
-<br>
-品牌故事
-<br>
-រឿងរ៉ាវរបស់យើង
-
-</h2>
+<h2>Brand Story</h2>
 
 <div class="story">
 
-KIRIROM Natural Mineral Water is inspired by the natural beauty of Cambodia’s Kirirom Mountain.
+<p>
+KIRIROM Natural Mineral Water comes from the beautiful mountain region of Cambodia.
+</p>
 
-We believe pure water should feel refreshing, natural and healthy for every family, office, restaurant and hotel.
+<p>
+基里隆天然矿泉水源自柬埔寨原始森林山脉，口感甘甜纯净。
+</p>
 
-Every bottle reflects nature, purity and trust.
-
-<br><br>
-
-基里隆天然矿泉水源自柬埔寨美丽的基里隆山。
-
-我们希望每一瓶水都代表自然、纯净与健康。
-
-<br><br>
-
-ទឹករ៉ែធម្មជាតិគីរីរម្យ តំណាងឱ្យធម្មជាតិ ភាពបរិសុទ្ធ និងសុខភាព។
+<p>
+ទឹករ៉ែធម្មជាតិគីរីរម្យ មានប្រភពពីតំបន់ភ្នំធម្មជាតិកម្ពុជា ស្អាត បរិសុទ្ធ និងផ្អែមធម្មជាតិ។
+</p>
 
 </div>
 
 </section>
 
-<section class="section">
+<footer class="footer">
 
-<div class="contact">
+<p>KIRIROM Natural Mineral Water</p>
 
-<h2>
+<p>Phone: 095 774 299</p>
 
-Contact Us
-<br>
-联系我们
-<br>
-ទាក់ទងមកយើង
+<p>Cambodia</p>
 
-</h2>
+</footer>
 
-<p>
-
-Phone: 095 774 299
-
-<br><br>
-
-Phnom Penh, Cambodia
-
-<br><br>
-
-KIRIROM Natural Mineral Water
-
-</p>
-
-    .hero {
-      position: relative;
-      min-height: 92vh;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
-      align-items: center;
-      gap: clamp(28px, 5vw, 70px);
-      padding: clamp(64px, 8vw, 110px) clamp(18px, 6vw, 86px) clamp(54px, 7vw, 96px);
-      overflow: hidden;
-    }
-
-</section>
-
-<div class="foot
+</body>
+</html>
